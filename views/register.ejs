@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMC - 2024_ComplaintReg</title>
+</head>
+<body>
+
+	<div style="width: 100%; background-image: url('images/back.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
+		<h1 for="" style="font-size: 35px;  text-align: center;"><a style="color:white; text-decoration:none;" href="https://shivmkrv.github.io/BWP_PROJECT/">Vadodara Municipal Corporation</a></h1>
+		<h3 aria-hidden="true" style="color: #ffffff;font-weight: bold; text-align: center;padding-left: 20px;">Please Login <span style="font-size:15px; color:rgb(245, 130, 130)">(if this is your first then please just sign up)</span></h3>
+		
+	</div>
+
+	<br/>
+	<br/>
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				
+				<form action="/register" method="post">
+					<label for="chk" aria-hidden="true" style="color: #4e00df;">Sign up</label>
+					<input type="text" name="name" placeholder="User name">
+                    <input type="number" name="number" placeholder="Phone Number">
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="pswd" placeholder="Password">
+                    <input type="password" name="cpswd" placeholder="Confirm Password">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="/login" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="pswd" placeholder="Password">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+
+	<br/>
+	
+	<div>
+		<h1 style="margin: 10px; text-align:center; color: crimson;"><%= title %></h1 >
+			<h1 style="margin: 10px; text-align:center; color: crimson;"><%= email %></h1 >
+			<h1 style="margin: 10px; text-align:center; color: crimson;"><%= password %></h1 >
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMC - 2024_UserComplaint</title>
+
+    <style>
+        h3{
+            margin-left: 10px;
+            color:rgb(21, 29, 24);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
+
+        @import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+* {
+  font-family: "Saira Semi Condensed", sans-serif;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: #faba61;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background-image: url('images/bg.jfif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*#11{
+	color:black;
+	font-size: 25px;
+	font-weight: bold;
+  margin: 0px;
+}
+
+#22{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}*/
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+
+
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 190px; background-color:#002c3f">
+      <img src="images/logo.jpg" alt="" style="float:left;height:150px; padding: 25px; padding-left: 300px; ">
+		<h1 for="" style="font-size: 35px;  margin-top : 50px;"><a style="color:white; text-decoration:none;padding-top:120px;" href="https://shivmkrv.github.io/BWP_PROJECT/">Vadodara Municipal Corporation</a></h1>
+		<h2 aria-hidden="true" style="color:white;font-weight: bold;padding-left: 550px;font-style: italic;">Welcome !!!! ------ <span style="text-transform: uppercase; font-size:15px; color:lightcoral;font-style: italic;"><%= name %></span></h2>
+	</div>
+
+    
+
+    <div style="width:100%;display:block;">
+        <div style="border:4px solid yellow;margin:100px 100px 100px 100px;text-align: center;">
+        <div style="border:4px solid cyan;">
+        <label for="" style="color:blue;">Your Information</label>
+        <br>
+        <h3>User ID : <span style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 200;"><%= id %></span></h3>
+        
+        <h3>Name : <span style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 200;"><%= name %></span></h3>
+        
+        <h3>Contact No. : <span style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 200;"><%= number %></span></h3>
+        
+        <h3>Email ID : <span style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 200;"><%= email %></span></h3>
+       
+        <h3>password : <span style="font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 200;"><%= pswd %></span></h3>
+        </div>
+        </div>
+        </div>
+        
+      
+
+      <div>
+        <label style="color:brown ; text-align: center; font-size: 80px; margin-top: 30px;">Register Your Complaint</label>
+      </div>
+
+      <div>
+        <form action="https://formsubmit.co/mkrvleo1234@gmail.com" method="POST">
+           
+          <label style="font-size:20px;margin-left:20px; margin: 0px;">Your Name</label>
+         <input name="username" type="text" style="width: 450px;" placeholder="e.g. Manan Patel" required>
+       
+       
+         <label style="margin:5px;font-size: 20px;" for="email">Your Email</label>
+         <input name="email" type="email" style="width: 450px;" placeholder="email@domain.com" required>
+      
+       
+         <label style="margin:5px;font-size: 20px;" for="message">Your Complaint</label>
+         <textarea name="message" placeholder=" type here ....." rows="5" cols="66" required></textarea>
+
+       <button type="submit" style="margin: 100px;">Send Me Message</button> 
+      
+           <input type="hidden" name="_next" value="https://shivmkrv.github.io/BWP_PROJECT/registeredcomplaint.html">
+           <input type="hidden" name="_subject" value="New Complaint !!!">
+           <input type="hidden" name="_cc" value="bwpproject1234@gmail.com">
+           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_autoresponse" value="We have get your Complaint. we will contact you within next 7 working days !!!!">
+       
+           </form>
+      </div>
+
+    
+</body>
+</html>
